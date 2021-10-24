@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<style>
+
+@import "button19.css"
+</style>
+
+
+</head>
+
+<body>
+<!-- HTML !-->
+<!-- debug -->
+
+<button id="b1" class="button-19" onclick="button_clicked()">Click me</button>
+<div id="inspect">...</div>
+
+
+
+<!-- code -->
+
+<script>
+
+function button_clicked(){
+	b1 = document.getElementById("b1")
+	b1.innerHTML = "You got me";
+	inspect = document.getElementById("inspect");
+	inspect.innerHTML = b1.innerHTML;
+}
+
+</script>
+</body>
+
+</html>

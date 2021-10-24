@@ -1,0 +1,95 @@
+<html>
+
+<head>
+<style>
+
+
+/* CSS */
+
+div {
+
+  font-size: 24px;
+  color:  darkblue;
+}
+
+.button-55 {
+  color:  darkblue;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.button-55:hover {
+/*  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;*/
+  background: yellow;
+}
+@media (min-width: 768px) {
+  .button-55 {
+    padding: 0.25em 0.75em;
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+<!-- HTML !-->
+<!-- debug -->
+
+
+	<button id="b0" class="button-55" onclick="button_clicked('inspect0', 'good')">
+	How ho you feel
+	</button><br><br>
+	<div id="inspect0">...</div>
+	<br>
+	
+	<button id="b1" class="button-55" onclick="button_clicked('inspect1', '11 o clock')">
+	What's the time
+	</button><br><br>
+	<div id="inspect1">...</div>
+	<br>
+	
+	<button id="b2" class="button-55" onclick="button_clicked('inspect2', 'In Italy')">
+	Where is Rome
+	</button><br><br>
+	<div id="inspect2">...</div>
+	<br>
+	
+
+<script>
+
+function button_clicked(div_id, phrase){
+	// b1 = document.getElementById("b1")
+	// b1.innerHTML = "Selling";
+	inspect = document.getElementById(div_id);
+	// inspect.innerHTML = b1.innerHTML;
+	inspect.innerHTML = phrase;
+
+  console.log(inspect, inspect.id, phrase)
+  return inspect, phrase
+}
+
+</script>
+</body>
+
+</html>
